@@ -39,7 +39,7 @@ OCLP by default will determine the proper SIP options for the OS version and Mac
 
 :::warning
 
-If you're unsure whether you should change the SIP settings, leave them as-is. Systems where you have already ran the Post Install Root Patching cannot enable SIP without potentially breaking the current install.
+If you're unsure whether you should change the SIP settings, leave them as-is. Systems where you have already run the Post Install Root Patching cannot enable SIP without potentially breaking the current install.
 
 :::
 
@@ -54,7 +54,7 @@ The guide in the dropdown below explains how the SIP settings work in OCLP, wher
 
 SIP settings can be accessed from the Security tab shown in the images. To change SIP settings, make the changes here, return in main menu and rebuild OpenCore using the first option.
 
-In the cases where SIP can be enabled, manually enabling it is needed. 
+In cases where SIP can be enabled, manually enabling is required. 
 
 Easiest way to check whether you can fully enable SIP is the "Post Install Root Patch" section, if that section tells your system doesn't need patches (or you don't install the patches e.g. in case you don't need WiFi on a Mac Pro with upgraded GPU running Monterey) then it is safe to assume full SIP can be enabled.
 
@@ -94,7 +94,7 @@ OCLP will automatically root patch your system during a first time install **if 
 Users can also see whether applicable patches have been installed, date and version the system was root patched with in the Post-Install Menu.
 
 - **Note:** In some cases OCLP may require packages to be obtained from the internet, such as KDK or MetallibSupprtPkg if they do not already exist on the system. In these cases OCLP may only install the WiFi driver on first patch run to ensure you can connect to the internet, which means no graphics acceleration 
-  after reboot. Root patching has to be ran again manually to install the rest of the required patches after internet connection is established to obtain the required packages.
+  after reboot. Root patching has to be run again manually to install the rest of the required patches after internet connection is established to obtain the required packages.
 
    Check the affected systems and GPUs from the warnings below.
 
